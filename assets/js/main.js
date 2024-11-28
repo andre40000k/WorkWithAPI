@@ -4,7 +4,7 @@ const resultsDiv = document.getElementById('results')
 
 async function fetchMovies(query) {
   try {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${query}`)
+    const response = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`)
     console.log('respons', response)
     const data = await response.json()
     console.log('data', data)
