@@ -23,7 +23,7 @@ function displayResults(movies) {
     .map(
       (movie) => `
     <div class="card">
-      <img src="${movie.Poster}" alt="${movie.Title}">
+      <img src="${movie.Poster !== 'N/A' ? movie.Poster : 'assets/images/vscode-cmd/film.png'}" alt="${movie.Title}">
       <h3>${movie.Title} (${movie.Year})</h3>
       <p>Type: ${movie.Type}</p>
     </div>
